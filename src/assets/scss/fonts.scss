@@ -1,0 +1,15 @@
+$Roboto: ('Regular', 400), ("Medium", 500), ("Bold", 700);
+$Rubik: ('Regular', 400), ("Medium", 500), ("Bold", 700), ("Light", 300);
+
+@each $name, $weight in $Roboto{
+    @font-face {
+        font-family: "Roboto";
+        src: url(../fonts/Roboto-#{$name}.ttf);
+        font-weight: $weight;
+    }
+    @font-face {
+        font-family: "Rubik";
+        src: url(../fonts/Rubik-#{$name}.ttf);
+        font-weight: $weight;
+    }
+}

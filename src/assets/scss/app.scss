@@ -1,0 +1,40 @@
+@use "./fonts.scss";
+
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik";
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+    overflow: inherit;
+    
+}
+
+button{
+    cursor: pointer;
+}
+
+
+
+body{
+    background: radial-gradient( circle, #494993ba,  #004078cd);
+    color: lightgray;
+    font-family: "Roboto";
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: center;
+    overflow: hidden;
+  }
+
+
+
